@@ -28,6 +28,10 @@ public class ObjectPoolManager
         {
             objectsPool.Add(type, pool);
         }
+        else
+        {
+            objectsPool[type].Clear();
+        }
     }
 
     public void Reset()
